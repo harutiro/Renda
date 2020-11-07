@@ -31,8 +31,6 @@ class MainActivity : AppCompatActivity() {
             secondLabelText.text = second.toString()
 
         }
-
-
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -45,6 +43,8 @@ class MainActivity : AppCompatActivity() {
 
             timer.start()
         }
+
+
 
         tapButton.setOnClickListener{
             if(second < 10){

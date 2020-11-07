@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">連打</string>
+    <string name="tap">TAP</string>
+    <string name="time">TIME</string>
+    <string name="tap1">TAP!</string>
+    <string name="start">START</string>
+    <string name="_0">0</string>
 </resources>
