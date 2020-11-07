@@ -8,11 +8,12 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:fontFamily="sans-serif-black"
         android:id="@+id/tapLabelText"
         android:layout_width="51dp"
         android:layout_height="27dp"
+        android:layout_marginTop="32dp"
         android:background="#00FFFFFF"
+        android:fontFamily="sans-serif-black"
         android:text="TAP"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
@@ -29,22 +30,63 @@
         android:text="0"
         android:textColor="#FFFFFF"
         android:textSize="120sp"
-        app:layout_constraintBottom_toTopOf="@+id/tapButton"
+        app:layout_constraintBottom_toTopOf="@+id/timeLabelText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tapLabelText" />
 
-    <Button
-        android:id="@+id/tapButton"
-        android:layout_width="248dp"
-        android:layout_height="248dp"
-        android:background="@drawable/background_rounded_circle"
+    <TextView
+        android:id="@+id/timeLabelText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:fontFamily="sans-serif-black"
-        android:text="TAP!"
-        android:textSize="64sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="TIME"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/secondLabelText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/countText" />
+
+    <TextView
+        android:id="@+id/secondLabelText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        android:textSize="72sp"
+        app:layout_constraintBottom_toTopOf="@+id/tapButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeLabelText" />
+
+    <Button
+        android:id="@+id/tapButton"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/background_rounded_circle_glay"
+        android:fontFamily="sans-serif-black"
+        android:text="TAP!"
+        android:textSize="64sp"
+        app:layout_constraintBottom_toTopOf="@+id/startButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondLabelText" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="248dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/background_rounded_corners"
+        android:fontFamily="sans-serif-black"
+        android:text="START"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tapButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
