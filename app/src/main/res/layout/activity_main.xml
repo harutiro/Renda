@@ -64,8 +64,8 @@
 
     <Button
         android:id="@+id/tapButton"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="200sp"
+        android:layout_height="200sp"
         android:background="@drawable/background_rounded_circle_glay"
         android:fontFamily="sans-serif-black"
         android:text="@string/tap1"
@@ -77,8 +77,8 @@
 
     <Button
         android:id="@+id/startButton"
-        android:layout_width="248dp"
-        android:layout_height="56dp"
+        android:layout_width="248sp"
+        android:layout_height="56sp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/background_rounded_corners"
         android:fontFamily="sans-serif-black"
